@@ -1,0 +1,14 @@
+<h2 style="text-align:center">Recipe Search</h2>
+<br>
+<div class="container">
+<div class="top">
+    <div class="input-group rounded">
+    <input #recipe type="search" class="form-control rounded" placeholder="Search your recipe" aria-label="Search"
+      aria-describedby="search-addon" style="width: 200px;" name="recipe"/>
+    <button type="button" class="btn btn-primary" (click)="recipes(recipe.value)" routerLink="/recipes">
+        
+      <i class="fa fa-search"></i>
+</button>
+</div>
+</div>
+</div>

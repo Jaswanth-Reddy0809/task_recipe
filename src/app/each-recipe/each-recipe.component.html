@@ -1,0 +1,23 @@
+<hr style="color: black; border: 1px solid black;">
+<div class="row">
+        <div scope="col" class="col-lg-2" ><h3>image</h3><img [src]="recipe_data.recipe.image" width="125px" height="125px"></div>
+        <div scope="col" class="col-lg-2"><h3>recipe</h3>{{recipe_data.recipe.label}}</div>
+        <div scope="col" class="col-lg-8"><h3>URL</h3>{{recipe_data.recipe.uri}}</div>
+
+</div>
+<br>
+<div class="row">
+        <div scope="col"class="col-lg-2" style="overflow:hidden;">
+            <h3>healthLabels</h3>
+            {{recipe_data.recipe.healthLabels}}
+        </div>
+        <div scope="col" class="col-lg-2" style="overflow:hidden;"><h3>calories</h3>{{recipe_data.recipe.calories}}</div>
+        <div scope="col" class="col-lg-5" style="overflow:auto;"><h3>ingredientLines</h3>{{recipe_data.recipe.ingredientLines}}</div>
+        <div scope="col" class="col-lg-3" style="overflow:hidden;"><h3>vitamins</h3>
+            <div>{{recipe_data.recipe.totalNutrients.PROCNT.label}}: {{recipe_data.recipe.totalNutrients.PROCNT.quantity}}{{recipe_data.recipe.totalNutrients.PROCNT.unit}}</div>
+            <div>{{recipe_data.recipe.totalNutrients.CA.label}}: {{recipe_data.recipe.totalNutrients.CA.quantity}}{{recipe_data.recipe.totalNutrients.CA.unit}}</div>
+            <div>{{recipe_data.recipe.totalNutrients.FAT.label}}: {{recipe_data.recipe.totalNutrients.FAT.quantity}}{{recipe_data.recipe.totalNutrients.FAT.unit}}</div>
+            <div>{{recipe_data.recipe.totalNutrients.CHOLE.label}}: {{recipe_data.recipe.totalNutrients.CHOLE.quantity}}{{recipe_data.recipe.totalNutrients.CHOLE.unit}}</div>
+            <div>{{recipe_data.recipe.totalNutrients.K.label}}: {{recipe_data.recipe.totalNutrients.K.quantity}}{{recipe_data.recipe.totalNutrients.K.unit}}</div>
+    </div>
+    
